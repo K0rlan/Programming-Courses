@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>iitu.Cookies.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>iitu.Cookies.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>iitu.LoginLogout.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>iitu.LoginLogout.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>iitu.LoginLogout.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>serv1</servlet-name>
+        <servlet-class>iitu.HiddenForm.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>serv1</servlet-name>
+        <url-pattern>/serv1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>serv2</servlet-name>
+        <servlet-class>iitu.HiddenForm.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>serv2</servlet-name>
+        <url-pattern>/serv2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sv1</servlet-name>
+        <servlet-class>iitu.URLRewriting.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sv1</servlet-name>
+        <url-pattern>/sv1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sv2</servlet-name>
+        <servlet-class>iitu.URLRewriting.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sv2</servlet-name>
+        <url-pattern>/sv2</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ser1</servlet-name>
+        <servlet-class>iitu.Session.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ser1</servlet-name>
+        <url-pattern>/ser1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ser2</servlet-name>
+        <servlet-class>iitu.Session.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ser2</servlet-name>
+        <url-pattern>/ser2</url-pattern>
+    </servlet-mapping>
+
+   <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServ</servlet-name>
+        <servlet-class>iitu.SessionLoginLogout.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServ</servlet-name>
+        <url-pattern>/LoginServ</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServ</servlet-name>
+        <servlet-class>iitu.SessionLoginLogout.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServ</servlet-name>
+        <url-pattern>/ProfileServ</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServ</servlet-name>
+        <servlet-class>iitu.SessionLoginLogout.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServ</servlet-name>
+        <url-pattern>/LogoutServ</url-pattern>
+    </servlet-mapping>
+</web-app>
