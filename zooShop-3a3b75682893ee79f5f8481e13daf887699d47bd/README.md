@@ -1,0 +1,1 @@
+I added @Input and data binding only to demonstrate that I know how to use it. In the project itself, this part is most likely not to be used. It may be in other components, but I can't decide which one yet. The site hasn't been fully developed yet. I hope for your understanding)
