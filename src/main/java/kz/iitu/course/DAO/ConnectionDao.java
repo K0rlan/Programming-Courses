@@ -202,7 +202,7 @@ public class ConnectionDao {
         }
     }
     public void getTeacherCourse(String name) throws SQLException {
-        rs = statement.executeQuery("select name, course_id, teachername from .courseclients inner join clients on client_id = id where teachername = '" + name + "'");
+        rs = statement.executeQuery("select name, course_id, teachername from courseclients inner join clients on client_id = id where teachername = '" + name + "'");
         System.out.printf("%-30.30s %-30.30s %-30.30s%n", "Имя клиента", "Название курса", "Имя преподавателя");
         while (rs.next()) {
             System.out.printf("%-30.30s %-30.30s %-30.30s%n", rs.getString("name"), rs.getString("course_id"), rs.getString("teachername"));
